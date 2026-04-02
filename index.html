@@ -1,0 +1,37 @@
+<div class="nai-image-gen-settings">
+    <div class="inline-drawer">
+        <div class="inline-drawer-toggle inline-drawer-header">
+            <b>NAI Image Gen</b>
+            <div class="inline-drawer-icon fa-solid fa-circle-chevron-down down"></div>
+        </div>
+        <div class="inline-drawer-content">
+
+            <div class="flex-container flexFlowColumn">
+                <label for="nai_image_gen_model">OpenRouter Model</label>
+                <input id="nai_image_gen_model" type="text" class="text_pole" placeholder="google/gemini-2.0-flash-001" />
+            </div>
+
+            <div class="flex-container flexFlowColumn">
+                <label for="nai_image_gen_context_messages">Context messages (recent chat)</label>
+                <input id="nai_image_gen_context_messages" type="number" min="1" max="20" class="text_pole" />
+            </div>
+
+            <div class="flex-container flexFlowColumn">
+                <div class="flex-container spaceBetween">
+                    <label for="nai_image_gen_sysprompt">System Prompt</label>
+                    <button id="nai_image_gen_reset_sysprompt" class="menu_button" title="Reset to default">Reset</button>
+                </div>
+                <textarea id="nai_image_gen_sysprompt" class="text_pole textarea_compact" rows="12"></textarea>
+            </div>
+
+            <div class="flex-container flexFlowColumn">
+                <div class="flex-container spaceBetween">
+                    <label for="nai_image_gen_cheatsheet">Tag Cheatsheet</label>
+                    <button id="nai_image_gen_reset_cheatsheet" class="menu_button" title="Reset to default">Reset</button>
+                </div>
+                <textarea id="nai_image_gen_cheatsheet" class="text_pole textarea_compact" rows="12"></textarea>
+            </div>
+
+        </div>
+    </div>
+</div>
